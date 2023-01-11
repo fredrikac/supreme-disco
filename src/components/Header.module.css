@@ -1,0 +1,41 @@
+.header {
+  padding: 1rem;
+  box-shadow: 1px 6px 20px 3px rgba(5,5,5,0.38);
+  -webkit-box-shadow: 1px 6px 20px 3px rgba(5,5,5,0.38);
+  -moz-box-shadow: 1px 6px 20px 3px rgba(5,5,5,0.38);
+}
+
+.heading {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a {
+  padding-right: 0.5rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 480px){
+  .heading {
+    font-size: 3rem;
+    padding: 0rem 0rem 0rem 3rem;
+  }
+
+  a {
+    font-size: large;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+
+  }
+
+  a:hover {
+    border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    background-color: rgba(57, 115, 157, 0.4);
+  }
+}

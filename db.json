@@ -1,0 +1,19 @@
+{
+  "courses": [
+    { "courseId": 1212, "title": "JavaScript 1", "length": "4 weeks", "description":"Getting started with JavaScript and learn the basics", "startDate": "2023-02-01" },
+    { "courseId": 2323, "title": "JavaScript 2", "length": "4 weeks", "description":"Step two in our JavaScript series", "startDate": "2023-03-01" },
+    { "courseId": 3424, "title": "JavaScript 3", "length": "4 weeks", "description":"Step three, intermediate level", "startDate": "2023-04-01" },
+    { "courseId": 4545, "title": "JavaScript 4", "length": "4 weeks", "description":"Step four: dive deeper into Javascript by building and launching your own application", "startDate": "2023-05-01" }
+  ],
+  "teachers": [
+    { "id": 1, "firstName": "Brandon", "lastName": "Duarte Tsegai", "personalIDnumber": "900101-0000", "email": "brandon@westcoastedu.se", "mobile": "0701122334", "competencies" : [
+       "Pedagogics", "JavaScript", "Frontend Development"
+    ] },
+    { "id": 2, "firstName": "Jonas", "lastName": "Stattin",  "personalIDnumber": "800202-1111",  "email": "jonas@westcoastedu.se", "mobile": "0701122335", "competencies" : [
+      "NodeJs", "JavaScript", "Frontend Development", "Backend Development"
+   ] },
+    { "id": 3, "firstName": "Mikael", "lastName": "Gustavsson", "personalIDnumber": "700303-2222", "email": "mikael@westcoastedu.se", "mobile": "0701122336","competencies" : [
+      "JavaScript", "Test Driven Development", "Frontend Development"
+   ]  }
+  ]
+}

@@ -1,0 +1,26 @@
+Kravspecifikation
+
+Funktionskrav
+• Applikationen ska utvecklas enligt TDD principerna och minst innehålla 1 test per
+komponent.
+• React’s egna Context API används för central tillståndshantering.
+• Refs ska användas
+• Portals ska användas
+
+Designkrav
+• Lätt att navigera i
+• Responsiv
+
+Sidor
+• En publik sida som visar kurser och lärare. URL: /
+• En detaljsida för varje kurs med detaljerad information om kursen samt en knapp där studenter kan anmäla sig. URL: /course/title 
+• En detaljsida för varje lärare med detaljerad information om läraren och dennes kompetenser. URL: /teacher/firstName-lastName
+• En admin-sida där inloggade användare kan lägga till nya kurser och lärare. 
+
+Komponenter
+• Det ska finnas en header med logotyp (texten Westcoast Education) och en knapp för att logga in 
+• När man är inloggad ska det finnas knappar för att lägga till nya kurser respektive lärare
+• När man är inloggad ska logga in-knappen visa texten Logga ut
+• Varje kurs ska renderas som en egen komponent på start
+• Varje lärare ska renderas som en egen komponent på start
+• Inmatning av nya kurser och lärare ska ske mha portals. Använd refs här
