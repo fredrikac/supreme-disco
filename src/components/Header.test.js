@@ -7,7 +7,7 @@ describe('Header component', () => {
   test('Should have a title', () => {
     setup();
 
-    const title = screen.getByRole('heading');
+    const title = screen.getByText(/westcoast education/i);
 
     expect(title).toBeInTheDocument();
   });

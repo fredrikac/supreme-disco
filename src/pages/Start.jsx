@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Course from '../components/Course';
 import Teacher from '../components/Teacher';
-import s from './Start.module.css';
 
 //Denna komponent ska rendera komponenten Course och Teacher
 //Den ska också hämta data. Begränsa så att den bara hämtar 1 gång.
@@ -11,13 +10,13 @@ const Start = () => {
   const [ teachers, setTeachers ] = useState([]);
 
   const getCourses = () => {
-    fetch('http://localhost:3010/courses')
+    fetch('http://localhost:3020/courses')
     .then((response) => response.json())
     .then((data) => setCourses(data))
   }
 
   const getTeachers = () => {
-    fetch('http://localhost:3010/teachers')
+    fetch('http://localhost:3020/teachers')
     .then((response) => response.json())
     .then((data) => setTeachers(data))
   }
@@ -32,10 +31,10 @@ const Start = () => {
 
   console.log(courses)
   return (
-    <div className={s.wrapper}>
-      <h1 className={s.heading}>Welcome to Westcoast Education!</h1>
-      <h2 className={s.subHeading}>Courses</h2>
-      <div className={s.sectionWrapper}>
+    <div className='wrapper'>
+      <h1 className='heading'>Welcome to Westcoast Education!</h1>
+      <h2 className='subHeading'>Courses</h2>
+      <div className='sectionWrapper'>
       {courses.map((course, i) => {
         return(
         <Course 
@@ -49,8 +48,8 @@ const Start = () => {
         )
       })}
       </div>
-      <h2 className={s.subHeading}>Our teachers</h2>
-      <div className={s.sectionWrapper}>
+      <h2 className='subHeading'>Our teachers</h2>
+      <div className='sectionWrapper'>
       {teachers.map((teacher, i) => {
         return(
           <Teacher 

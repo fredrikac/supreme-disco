@@ -24,3 +24,10 @@ Komponenter
 • Varje kurs ska renderas som en egen komponent på start
 • Varje lärare ska renderas som en egen komponent på start
 • Inmatning av nya kurser och lärare ska ske mha portals. Använd refs här
+
+
+
+Fortsätt med
+- Lägg till validering på Login-formuläret, som det är nu kan man trycka Logga in utan att skriva in något och ändå komma in
+- Styla Admin page
+- Lägg till formulär i portal på Admin page

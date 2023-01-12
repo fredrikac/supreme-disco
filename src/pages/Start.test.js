@@ -7,7 +7,7 @@ describe('Start page layout', () => {
 
   test('Start page should have title "Welcome to Westcoast Education"', () => {
     setup();
-    const pageTitle = screen.getByRole('heading', { name: 'Welcome to Westcoast Education' });
+    const pageTitle = screen.getByRole('heading', { name: 'Welcome to Westcoast Education!' });
     
     expect(pageTitle).toBeInTheDocument();
   });

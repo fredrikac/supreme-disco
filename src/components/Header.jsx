@@ -1,13 +1,26 @@
+import { useContext } from 'react';
 //import { Link } from 'react-router-dom';
+import AuthContext from './auth_context';
 import s from './Header.module.css';
 
+//se över elementen, ska det vara a eller link? 
+
 const Header = () => {
+  const context = useContext(AuthContext);
+
   return (
     <header className={s.header}>
-      <h1 className={s.heading}>Westcoast Education</h1>
+      <a href='/' className={s.heading}>Westcoast Education</a>
       <nav className={s.navbar}>
-        <a href='/'>Home</a>
-        <a href='/add'>Add</a>
+        {!context.isLoggedIn && (
+          <a className='button8' href='/login'>Login</a>
+        )}
+        {context.isLoggedIn && (
+          <>
+          <a href='/admin'>Admin</a>
+          <button className='button8' onClick={context.onLogout}>Log out</button>
+          </>
+        )}
       </nav>
     </header>
   )

@@ -3,27 +3,36 @@
   box-shadow: 1px 6px 20px 3px rgba(5,5,5,0.38);
   -webkit-box-shadow: 1px 6px 20px 3px rgba(5,5,5,0.38);
   -moz-box-shadow: 1px 6px 20px 3px rgba(5,5,5,0.38);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .heading {
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 a {
   padding-right: 0.5rem;
   text-decoration: none;
+  font-size: small;
 }
 
 @media screen and (min-width: 480px){
   .heading {
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 0rem 0rem 0rem 3rem;
+    background: none !important;
   }
 
   a {
