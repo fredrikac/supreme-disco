@@ -1,9 +1,9 @@
 {
   "courses": [
-    { "courseId": 1212, "title": "JavaScript 1", "length": "4 weeks", "description":"Getting started with JavaScript and learn the basics", "startDate": "2023-02-01" },
-    { "courseId": 2323, "title": "JavaScript 2", "length": "4 weeks", "description":"Step two in our JavaScript series", "startDate": "2023-03-01" },
-    { "courseId": 3424, "title": "JavaScript 3", "length": "4 weeks", "description":"Step three, intermediate level", "startDate": "2023-04-01" },
-    { "courseId": 4545, "title": "JavaScript 4", "length": "4 weeks", "description":"Step four: dive deeper into Javascript by building and launching your own application", "startDate": "2023-05-01" }
+    { "courseId": 1212, "title": "JavaScript 1", "length": "4 weeks", "description":"Get started with JavaScript and learn the basics - this course is for absolute beginners. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "startDate": "2023-02-01" },
+    { "courseId": 2323, "title": "JavaScript 2", "length": "4 weeks", "description":"Step two in our JavaScript series. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "startDate": "2023-03-01" },
+    { "courseId": 3424, "title": "JavaScript 3", "length": "4 weeks", "description":"Step three, intermediate level. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.", "startDate": "2023-04-01" },
+    { "courseId": 4545, "title": "JavaScript 4", "length": "4 weeks", "description":"Step four: dive deeper into Javascript by building and launching your own application. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.", "startDate": "2023-05-01" }
   ],
   "teachers": [
     { "id": 1, "firstName": "Brandon", "lastName": "Duarte Tsegai", "personalIDnumber": "900101-0000", "email": "brandon@westcoastedu.se", "mobile": "0701122334", "competencies" : [

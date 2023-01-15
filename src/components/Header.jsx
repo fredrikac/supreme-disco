@@ -17,7 +17,7 @@ const Header = () => {
         )}
         {context.isLoggedIn && (
           <>
-          <a href='/admin'>Admin</a>
+          <a className={s.adminLink} href='/admin'>Admin</a>
           <button className='button8' onClick={context.onLogout}>Log out</button>
           </>
         )}

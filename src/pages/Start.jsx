@@ -29,7 +29,6 @@ const Start = () => {
     getTeachers();
   }, []);
 
-  console.log(courses)
   return (
     <div className='wrapper'>
       <h1 className='heading'>Welcome to Westcoast Education!</h1>
@@ -59,6 +58,8 @@ const Start = () => {
           email={teacher.email}
           personalIDnumber={teacher.personalIDnumber}
           mobile={teacher.mobile}
+          competencies={teacher.competencies}
+          id={teacher.id}
           /> 
         )
       })}

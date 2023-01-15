@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Start from './pages/Start';
 import Login from './pages/Login';
 import Admin from './pages/Admin';
+import CoursePage from './pages/CoursePage';
+import TeacherPage from './pages/TeacherPage';
 import './App.css';
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
             <Route path='/' element={<Start />}/>
             <Route path='/login' element={<Login />}/>
             <Route path='/admin' element={<Admin />} />
+            <Route path='/course/:courseId' element={<CoursePage />} />
+            <Route path='/teacher/:firstName' element={<TeacherPage />} />
           </Routes>
         </main>
         </AuthContextProvider>

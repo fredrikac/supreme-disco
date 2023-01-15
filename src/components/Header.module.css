@@ -23,10 +23,20 @@
 }
 
 a {
-  padding-right: 0.5rem;
   text-decoration: none;
-  font-size: small;
 }
+
+
+.adminLink {
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #39739d;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+
 
 @media screen and (min-width: 480px){
   .heading {
@@ -35,16 +45,11 @@ a {
     background: none !important;
   }
 
-  a {
-    font-size: large;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-
+  .adminLink {
+    margin-right: 1rem;
+    font-size: 16px;
   }
-
-  a:hover {
-    border-radius: 20px 20px 20px 20px;
-    -webkit-border-radius: 20px 20px 20px 20px;
-    -moz-border-radius: 20px 20px 20px 20px;
-    background-color: rgba(57, 115, 157, 0.4);
+  .adminLink:hover {
+    border-bottom: 2px solid #7aa7c7;
   }
 }
