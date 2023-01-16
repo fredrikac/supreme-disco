@@ -28,5 +28,7 @@ Komponenter
 
 
 Fortsätt med
-- Lägg till formulär i portal på Admin page: kolla på föreläsning från i fredags om att testa portals
-- Tester på skit
+- Hitta ett sätt att öppna olika komponenter i portal beroende på vilken knapp som tryckts. 
+- Tester
+- se över länkar
+- snygga till styling

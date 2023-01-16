@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 
 const CoursePage = () => {
   const location = useLocation();
-  const { title, courseId, length, startDate, description } = location.state;
+  const { title, id, length, startDate, description } = location.state;
   
   return (
     <section className='wrapper'>
@@ -12,7 +12,7 @@ const CoursePage = () => {
       <h2 className='heading3'>Practical information</h2>
       <p>All our courses are remote.</p>
       <ul>
-        <li>Course id: {courseId}</li>
+        <li>Course id: {id}</li>
         <li>Length: {length}</li>
         <li>Start: {startDate}</li>
       </ul>

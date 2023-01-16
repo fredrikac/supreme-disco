@@ -3,7 +3,7 @@ import image from "../assets/profile-placeholder.jpg";
 
 const TeacherPage = () => {
   const location = useLocation();
-  const {firstName, lastName, mobile, email, personalIDnumber, competencies, id } = location.state;
+  const { firstName, lastName, mobile, email, personalIDnumber, competencies, id } = location.state;
   return (
     <section className='wrapper'>
     <h1 className='subHeading'>{firstName} {lastName}</h1>

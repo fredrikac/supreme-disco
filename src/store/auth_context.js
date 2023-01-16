@@ -9,6 +9,7 @@ const AuthContext = React.createContext({
 
 export const AuthContextProvider = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -16,19 +17,21 @@ export const AuthContextProvider = (props) => {
 
     if (userloggedIn === '1') {
       setIsLoggedIn(true);
+      setUsername(localStorage.getItem('username'));
     }
   }, []);
 
   const onLogoutHandler = () => {
     setIsLoggedIn(false);
     localStorage.removeItem('isLoggedIn');
-    localStorage.removeItem('userName');
+    localStorage.removeItem('username');
   };
 
   const onLoginHandler = (user) => {
     setIsLoggedIn(true);
+    setUsername(user.username)
     localStorage.setItem('isLoggedIn', 1);
-    localStorage.setItem('userName', user.userName);
+    localStorage.setItem('username', user.username);
     navigate('/');
   };
 
@@ -36,6 +39,7 @@ export const AuthContextProvider = (props) => {
     <AuthContext.Provider
       value={{
         isLoggedIn: isLoggedIn,
+        user: username,
         onLogout: onLogoutHandler,
         onLogin: onLoginHandler,
       }}

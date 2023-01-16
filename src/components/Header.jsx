@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 //import { Link } from 'react-router-dom';
-import AuthContext from './auth_context';
+import AuthContext from '../store/auth_context';
 import s from './Header.module.css';
 
 //se över elementen, ska det vara a eller link? 

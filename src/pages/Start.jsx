@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React,{ useState, useEffect } from 'react';
 import Course from '../components/Course';
 import Teacher from '../components/Teacher';
 
@@ -39,7 +39,7 @@ const Start = () => {
         <Course 
         key={i}
         title={course.title}
-        courseId={course.courseId}
+        id={course.id}
         length={course.length}
         startDate={course.startDate}
         description={course.description}
@@ -68,4 +68,4 @@ const Start = () => {
   )
 }
 
-export default Start;
+export default React.memo(Start);
