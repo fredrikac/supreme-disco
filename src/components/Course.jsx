@@ -8,7 +8,8 @@ const Course = ({ title, id, length, startDate, description}) => {
         to={`/course/${id}`} 
         key={`${title}-${id}`} 
         state={{title, id, length, startDate, description}}
-        className='heading3'>
+        className='heading3'
+      >
         {title}
       </Link>
       <p>Course id: #{id}</p>
@@ -18,7 +19,8 @@ const Course = ({ title, id, length, startDate, description}) => {
         to={`/course/${id}`} 
         key={id} 
         state={{title, id, length, startDate, description}}
-        className='button8 info-btn'>
+        className='button8 info-btn'
+      >
         More info
       </Link>
     </section>

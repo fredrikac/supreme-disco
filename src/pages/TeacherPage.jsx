@@ -4,6 +4,7 @@ import image from "../assets/profile-placeholder.jpg";
 const TeacherPage = () => {
   const location = useLocation();
   const { firstName, lastName, mobile, email, personalIDnumber, competencies, id } = location.state;
+  
   return (
     <section className='wrapper'>
     <h1 className='subHeading'>{firstName} {lastName}</h1>
@@ -19,8 +20,8 @@ const TeacherPage = () => {
             </ul>
           </div>
       </div>
-    <h2 className='heading4'>Skills</h2>
-    <p>{competencies}</p>
+      <h2 className='heading4'>Skills</h2>
+      <p>{competencies}</p>
     </div>
   </section>
   )

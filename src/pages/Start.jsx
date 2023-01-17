@@ -2,9 +2,6 @@ import React,{ useState, useEffect } from 'react';
 import Course from '../components/Course';
 import Teacher from '../components/Teacher';
 
-//Denna komponent ska rendera komponenten Course och Teacher
-//Den ska också hämta data. Begränsa så att den bara hämtar 1 gång.
-
 const Start = () => {
   const [ courses, setCourses ] = useState([]);
   const [ teachers, setTeachers ] = useState([]);
@@ -34,35 +31,37 @@ const Start = () => {
       <h1 className='heading'>Welcome to Westcoast Education!</h1>
       <h2 className='subHeading'>Courses</h2>
       <div className='sectionWrapper'>
-      {courses.map((course, i) => {
-        return(
-        <Course 
-        key={i}
-        title={course.title}
-        id={course.id}
-        length={course.length}
-        startDate={course.startDate}
-        description={course.description}
-        />
-        )
-      })}
+        {courses.map((course, i) => {
+          return(
+            <Course 
+              data-testid='course'
+              key={i}
+              title={course.title}
+              id={course.id}
+              length={course.length}
+              startDate={course.startDate}
+              description={course.description}
+            />
+          )
+        })}
       </div>
+      <br />
       <h2 className='subHeading'>Our teachers</h2>
       <div className='sectionWrapper'>
-      {teachers.map((teacher, i) => {
-        return(
-          <Teacher 
-          key={i} 
-          firstName={teacher.firstName}
-          lastName={teacher.lastName}
-          email={teacher.email}
-          personalIDnumber={teacher.personalIDnumber}
-          mobile={teacher.mobile}
-          competencies={teacher.competencies}
-          id={teacher.id}
-          /> 
-        )
-      })}
+        {teachers.map((teacher, i) => {
+          return(
+            <Teacher 
+              key={i} 
+              firstName={teacher.firstName}
+              lastName={teacher.lastName}
+              email={teacher.email}
+              personalIDnumber={teacher.personalIDnumber}
+              mobile={teacher.mobile}
+              competencies={teacher.competencies}
+              id={teacher.id}
+            /> 
+          )
+        })}
       </div>
     </div>
   )

@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 
 const Teacher = ({ firstName, lastName, mobile, email, personalIDnumber, competencies, id }) => {
+  
   return (
     <section className='section'>
       <Link 
         to={`/teacher/${firstName}`} 
         key={`${firstName}-${id}`} 
         state={{firstName, lastName, mobile, email, personalIDnumber, competencies, id}}
-        className='heading3'>
-        {firstName} {lastName}
+        className='heading3'
+        >
+          {firstName} {lastName}
       </Link>
       <p>Personal Identification Number: {personalIDnumber}</p>
       <p>Email: {email}</p>
@@ -17,8 +19,9 @@ const Teacher = ({ firstName, lastName, mobile, email, personalIDnumber, compete
         to={`/teacher/${firstName}`} 
         key={id} 
         state={{firstName, lastName, mobile, email, personalIDnumber, competencies, id}}
-        className='button8 read-btn'>
-        Read more
+        className='button8 read-btn'
+        >
+          Read more
       </Link>
     </section>
   )

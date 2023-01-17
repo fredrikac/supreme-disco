@@ -25,7 +25,7 @@ const AddCourse = (props) => {
     <div className='modal'>
       <div className='wrapper'>
         <button className='close' onClick={props.onClick} />
-        <h2>Add course</h2>
+        <h2 className='heading4'>Add course</h2>
         <form onSubmit={onSubmitHandler}>
           <label htmlFor="title">Title</label>
           <input 

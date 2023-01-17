@@ -29,7 +29,7 @@ const AddTeacher = (props) => {
     <div className='modal'>
       <div className='wrapper'>
         <button className='close' onClick={props.onClick} />
-        <h2>Add teacher</h2>
+        <h2 className='heading4'>Add teacher</h2>
         <form onSubmit={onSubmitTeacher}>
           <label htmlFor='firstName'>First name</label>
           <input 
