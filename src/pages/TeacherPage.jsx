@@ -19,14 +19,8 @@ const TeacherPage = () => {
             </ul>
           </div>
       </div>
-    <h2 className='heading3'>Skills</h2>
-      <ul>
-        {competencies.map((skill, i) => {
-          return(
-            <li key={i}>{skill}</li>
-          )
-        })}
-      </ul>
+    <h2 className='heading4'>Skills</h2>
+    <p>{competencies}</p>
     </div>
   </section>
   )

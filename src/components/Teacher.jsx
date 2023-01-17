@@ -17,7 +17,7 @@ const Teacher = ({ firstName, lastName, mobile, email, personalIDnumber, compete
         to={`/teacher/${firstName}`} 
         key={id} 
         state={{firstName, lastName, mobile, email, personalIDnumber, competencies, id}}
-        className='button8'>
+        className='button8 read-btn'>
         Read more
       </Link>
     </section>

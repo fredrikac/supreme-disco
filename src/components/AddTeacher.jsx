@@ -1,7 +1,4 @@
 import { useRef } from 'react';
-import s from './AddCourse.module.css';
-
-//Fixa: competencies behöver vara en array. 
 
 const AddTeacher = (props) => {
 
@@ -28,57 +25,71 @@ const AddTeacher = (props) => {
     props.onSave(teacher);
   }
 
-
   return (
-    <div className={s.modal}>
+    <div className='modal'>
       <div className='wrapper'>
         <button className='close' onClick={props.onClick} />
         <h2>Add teacher</h2>
         <form onSubmit={onSubmitTeacher}>
           <label htmlFor='firstName'>First name</label>
           <input 
+            className='input'
             type="text"
             id='firstName'
             placeholder='first name'
             ref={firstNameRef} 
+            required
           />
           <label htmlFor="lastName">Last name</label>
           <input 
+            className='input'
             type="text"
             id='lastName'
             placeholder='last name'
-            ref={lastNameRef} 
+            ref={lastNameRef}
+            required 
           />
           <label htmlFor="personalID">Personal ID number</label>
           <input 
+            className='input'
             id='personalID'
             type="number" 
             placeholder='YYYYMMDD'
             ref={personalIDRef}
+            required
           />
           <label htmlFor="email">Email</label>
           <input 
+            className='input'
             type="email"
             id='email'
             ref={emailRef} 
+            required
           />
           <label htmlFor="mobile">Mobile phone</label>
           <input 
+            className='input'
             type="tel"
             id='mobile'
             ref={mobileRef} 
+            required
           />
           <label htmlFor="competencies">Skills</label>
-          <input 
+          <textarea 
+            className='input'
             type="text"
             id='competencies'
             ref={competenciesRef} 
+            required
           />
           <label htmlFor="id">Staff ID</label>
           <input 
+            className='input'
             type="number"
             id='id'
-            ref={idRef} />
+            ref={idRef}
+            required
+          />
           <button className='button8'>Save</button>
         </form>
       </div>
@@ -86,4 +97,4 @@ const AddTeacher = (props) => {
   )
 }
 
-export default AddTeacher
+export default AddTeacher;

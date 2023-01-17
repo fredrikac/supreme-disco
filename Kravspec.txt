@@ -23,12 +23,11 @@ Komponenter
 • När man är inloggad ska logga in-knappen visa texten Logga ut
 • Varje kurs ska renderas som en egen komponent på start
 • Varje lärare ska renderas som en egen komponent på start
-• Inmatning av nya kurser och lärare ska ske mha portals. Använd refs här
-
+• Inmatning av nya kurser och lärare ska ske mha portals. 
 
 
 Fortsätt med
-- Hitta ett sätt att öppna olika komponenter i portal beroende på vilken knapp som tryckts. 
 - Tester
 - se över länkar
 - snygga till styling
+- Se över ID: de måste vara unika men just nu kan anv. skriva in vad som helst. Inte så användarvänligt att manuellt behöva hålla koll på vilka id:n som är lediga.

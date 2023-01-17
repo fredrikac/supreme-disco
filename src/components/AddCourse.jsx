@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import s from './AddCourse.module.css';
 
 const AddCourse = (props) => {
  
@@ -23,7 +22,7 @@ const AddCourse = (props) => {
   }
 
   return (
-    <div className={s.modal}>
+    <div className='modal'>
       <div className='wrapper'>
         <button className='close' onClick={props.onClick} />
         <h2>Add course</h2>
@@ -35,6 +34,7 @@ const AddCourse = (props) => {
             id='title'
             placeholder='title'
             ref={titleRef}
+            required
           />
           <label htmlFor="description">Description</label>
           <textarea
@@ -42,13 +42,16 @@ const AddCourse = (props) => {
             type="text"
             id='description'
             ref={descriptionRef}
+            required
           />
           <label htmlFor="courseId">ID</label>
           <input 
             className='input'
             type="number"
             id='courseId'
-            ref={idRef} />
+            ref={idRef}
+            required
+          />
           <label htmlFor="length">Length (in weeks)</label>
           <input 
             className='input'
@@ -56,13 +59,17 @@ const AddCourse = (props) => {
             id='length'
             minLength='1' 
             maxLength='5'
-            ref={lengthRef} />
+            ref={lengthRef} 
+            required
+          />
           <label htmlFor="startdate">Start date</label>
           <input 
             className='input'
             type="date"
             id='startdate'
-            ref={startDateRef} />
+            ref={startDateRef}
+            required
+          />
           <button className='button8'>Save</button>
         </form>
       </div>

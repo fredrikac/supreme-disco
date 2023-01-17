@@ -10,11 +10,17 @@ import Modal from "../components/Modal";
 const Admin = () => {
   const context = useContext(AuthContext);
   const navigate = useNavigate();
-  const [showModal, setShowModal] = useState(false);
+  const [showCourseModal, setShowCourseModal] = useState(false);
+  const [ showTeacherModal, setShowTeacherModal ] = useState(false);
 
-  const onShowModalHandler = (e) => {
+  const onShowCourseModalHandler = (e) => {
     e.preventDefault();
-    setShowModal(true);
+    setShowCourseModal(true);
+  }
+
+  const onShowTeacherModalHandler = (e) => {
+    e.preventDefault();
+    setShowTeacherModal(true);
   }
 
   const onSaveCourse = async (course) => {
@@ -28,7 +34,7 @@ const Admin = () => {
     
     console.log(result.status)
     if (result.status === 201) {
-      setShowModal(false);
+      setShowCourseModal(false);
       navigate('/');
     }
   }
@@ -44,18 +50,26 @@ const Admin = () => {
     
     console.log(result.status)
     if (result.status === 201) {
-      setShowModal(false);
+      setShowTeacherModal(false);
       navigate('/')
     }
   }
 
   return (
     <section className='wrapper'>
-      {showModal && (
+      {showCourseModal && (
         <Modal 
-          onSave={onSaveTeacher}
-          onClick={() => setShowModal(false)}/>
+          type={'course'}
+          onSave={onSaveCourse}
+          onClick={() => setShowCourseModal(false)}/>
       )}
+      {showTeacherModal && (
+                <Modal 
+                type={'teacher'}
+                onSave={onSaveTeacher}
+                onClick={() => setShowTeacherModal(false)}/>
+        )
+      }
 
       {!context.isLoggedIn && (
         <h1 className='heading subHeading'>Sorry, you need to be logged in to access this page.</h1>
@@ -63,8 +77,8 @@ const Admin = () => {
       {context.isLoggedIn && (
         <>
           <h2 className='subHeading'>Admin page</h2>
-          <button className='button8 btn' onClick={onShowModalHandler}>Add course</button>
-          <button className='button8 btn' onClick={onShowModalHandler}>Add teacher</button> 
+          <button className='button8 btn' onClick={onShowCourseModalHandler}>Add course</button>
+          <button className='button8 btn' onClick={onShowTeacherModalHandler}>Add teacher</button> 
         </>
       )}
     </section>

@@ -1,20 +1,26 @@
 import ReactDOM from "react-dom";
 import AddCourse from "./AddCourse";
 import AddTeacher from "./AddTeacher";
-import s from './Modal.module.css';
-
-//Hur lösa två olika komponenter i popupsen beroende på vilken knapp som trycks på i admin?
 
 const Overlay = () => {
-  return <div className={s.overlay} />
+  return <div className='overlay' />
 }
 
 const ModalOverlay = (props) => {
   return (
-      <AddTeacher 
-        onSave={props.onSave}
-        onClick={props.onClick}
-      />
+    <>
+      {props.type === 'course' ? (
+        <AddCourse 
+          onSave={props.onSave}
+          onClick={props.onClick}
+        />
+      ) : (
+        <AddTeacher 
+          onSave={props.onSave}
+          onClick={props.onClick}
+        />
+      )}
+    </>
   );
 }
 
@@ -29,6 +35,7 @@ const Modal = (props) => {
 
       {ReactDOM.createPortal(
         <ModalOverlay
+          type={props.type}
           onSave={props.onSave}
           onClick={props.onClick}
           >{props.children}

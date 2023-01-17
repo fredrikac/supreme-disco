@@ -1,53 +1,32 @@
 {
   "courses": [
     {
-      "id": 1212,
+      "id": 1,
       "title": "JavaScript 1",
-      "length": "4 weeks",
+      "length": "4",
       "description": "Get started with JavaScript and learn the basics - this course is for absolute beginners. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "startDate": "2023-02-01"
     },
     {
-      "id": 2323,
+      "id": 2,
       "title": "JavaScript 2",
-      "length": "4 weeks",
+      "length": "4",
       "description": "Step two in our JavaScript series. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "startDate": "2023-03-01"
     },
     {
-      "id": 3424,
+      "id": 3,
       "title": "JavaScript 3",
-      "length": "4 weeks",
+      "length": "4",
       "description": "Step three, intermediate level. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
       "startDate": "2023-04-01"
     },
     {
-      "id": 4545,
+      "id": 4,
       "title": "JavaScript 4",
-      "length": "4 weeks",
+      "length": "4",
       "description": "Step four: dive deeper into Javascript by building and launching your own application. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
       "startDate": "2023-05-01"
-    },
-    {
-      "title": "JavaScript Advanced",
-      "description": "The final course blablabal",
-      "id": "2232",
-      "length": "5",
-      "startDate": "2023-02-01"
-    },
-    {
-      "title": "HTML for dummies",
-      "description": "dfhdfgnvb mnbcnvgjnc",
-      "id": "4555",
-      "length": "3",
-      "startDate": "2023-01-25"
-    },
-    {
-      "title": "safsadfg",
-      "description": "sdgsdgs",
-      "id": "4",
-      "length": "4",
-      "startDate": "2023-01-19"
     }
   ],
   "teachers": [
@@ -58,11 +37,7 @@
       "personalIDnumber": "900101-0000",
       "email": "brandon@westcoastedu.se",
       "mobile": "0701122334",
-      "competencies": [
-        "Pedagogics",
-        "JavaScript",
-        "Frontend Development"
-      ]
+      "competencies": "Pedagogics, JavaScript, Frontend Development"
     },
     {
       "id": 2,
@@ -71,12 +46,7 @@
       "personalIDnumber": "800202-1111",
       "email": "jonas@westcoastedu.se",
       "mobile": "0701122335",
-      "competencies": [
-        "NodeJs",
-        "JavaScript",
-        "Frontend Development",
-        "Backend Development"
-      ]
+      "competencies": "NodeJs, JavaScript, Frontend Development, Backend Development"
     },
     {
       "id": 3,
@@ -85,11 +55,7 @@
       "personalIDnumber": "700303-2222",
       "email": "mikael@westcoastedu.se",
       "mobile": "0701122336",
-      "competencies": [
-        "JavaScript",
-        "Test Driven Development",
-        "Frontend Development"
-      ]
+      "competencies": "JavaScript, Test Driven Development, Frontend Development"
     }
   ]
 }

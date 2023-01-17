@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom"
-//denna komponent ska rendera kursnamn, kursnummer, beskrivning, längd på kursen samt startdatum. Kanske ska hela elementet vara klickbart istället för knapp?
-//Knappen ska länka till en detaljsida om kursen. 
+import { Link } from "react-router-dom";
 
 const Course = ({ title, id, length, startDate, description}) => {
 
@@ -14,17 +12,17 @@ const Course = ({ title, id, length, startDate, description}) => {
         {title}
       </Link>
       <p>Course id: #{id}</p>
-      <p>Duration: {length}</p>
+      <p>Duration: {length} weeks</p>
       <p>Start date: {startDate}</p>
       <Link 
         to={`/course/${id}`} 
         key={id} 
         state={{title, id, length, startDate, description}}
-        className='button8'>
+        className='button8 info-btn'>
         More info
       </Link>
     </section>
   )
 }
 
-export default Course
+export default Course;
