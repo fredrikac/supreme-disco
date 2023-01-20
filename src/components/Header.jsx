@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import AuthContext from '../store/auth_context';
 import s from './Header.module.css';
 
@@ -8,14 +7,14 @@ const Header = () => {
 
   return (
     <header className={s.header}>
-      <Link to='/' className={s.heading}>Westcoast Education</Link>
+      <a href='/' className={s.heading}>Westcoast Education</a>
       <nav className={s.navbar}>
         {!context.isLoggedIn && (
-          <Link className='button8' to='/login'>Login</Link>
+          <a className='button8' href='/login'>Login</a>
         )}
         {context.isLoggedIn && (
           <>
-          <Link className={s.adminLink} to='/admin'>Admin</Link>
+          <a className={s.adminLink} href='/admin'>Admin</a>
           <button className='button8' onClick={context.onLogout}>Log out</button>
           </>
         )}
@@ -24,4 +23,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

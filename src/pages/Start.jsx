@@ -27,7 +27,7 @@ const Start = () => {
   }, []);
 
   return (
-    <div className='wrapper'>
+    <div className='wrapper' data-testid='start-component' >
       <h1 className='heading'>Welcome to Westcoast Education!</h1>
       <h2 className='subHeading'>Courses</h2>
       <div className='sectionWrapper'>

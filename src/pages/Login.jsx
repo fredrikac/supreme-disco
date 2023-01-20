@@ -42,7 +42,7 @@ const Login = () => {
   }
 
   return (
-    <div className='wrapper'>
+    <div className='wrapper' data-testid='login-component'>
       <h1 className='subHeading'>Login</h1>
       <form onSubmit={onSave}>
         <label htmlFor='username'>Username/Email</label>

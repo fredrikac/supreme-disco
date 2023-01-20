@@ -23,9 +23,11 @@ describe('Login page component', () => {
     expect(password.type).toBe('password');
   });
 
-  test('there should be a login button', () => {
+  test('there should be a login button that is disabled initially', () => {
     setup();
     const loginBtn = screen.getByRole('button', { name: /Login/i});
     expect(loginBtn).toBeInTheDocument();
+    expect(loginBtn).toBeDisabled();
   });
+
 });

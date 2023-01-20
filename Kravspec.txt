@@ -26,8 +26,3 @@ Komponenter
 • Inmatning av nya kurser och lärare ska ske mha portals. 
 
 
-Fortsätt med
-- Tester
-- se över länkar
-- snygga till styling
-- Se över ID: de måste vara unika men just nu kan anv. skriva in vad som helst. Inte så användarvänligt att manuellt behöva hålla koll på vilka id:n som är lediga.

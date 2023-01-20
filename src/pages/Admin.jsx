@@ -3,10 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import AuthContext from "../store/auth_context";
 import Modal from "../components/Modal";
 
-//Denna sida ska visa välkommen-text samt två knappar, en för att lägga till kurser och en för att lägga till lärare. 
-//en portal ska öppnas när användaren klickar på respektive knapp.
-//ett sätt att ha koll på vilken knapp som trycks, och beroende på det visa olika Modals? 
-
 const Admin = () => {
   const context = useContext(AuthContext);
   const navigate = useNavigate();
@@ -56,7 +52,7 @@ const Admin = () => {
   }
 
   return (
-    <section className='wrapper'>
+    <section className='wrapper' data-testid='admin-component'>
       {showCourseModal && (
         <Modal 
           type={'course'}
